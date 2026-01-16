@@ -1,4 +1,3 @@
-import { createWorkout } from "../actions";
 import { createClient } from "@/utils/supabase/server";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
