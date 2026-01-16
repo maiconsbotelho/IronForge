@@ -2,14 +2,23 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Dumbbell, Timer, BarChart2, User } from "lucide-react";
+import {
+  Home,
+  Dumbbell,
+  Timer,
+  BarChart2,
+  User,
+  ClipboardList,
+  Activity,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { UserAvatar } from "@/components/UserAvatar";
 
 const navItems = [
   { href: "/", icon: Home, label: "Início" },
-  { href: "/workouts", icon: Timer, label: "Treino" },
-  { href: "/exercises", icon: Dumbbell, label: "Exercícios" },
+  { href: "/workouts", icon: Dumbbell, label: "Treino" },
+  { href: "/exercises", icon: Activity, label: "Exercícios" },
+  { href: "/plans", icon: ClipboardList, label: "Fichas" },
   { href: "/stats", icon: BarChart2, label: "Stats" },
   { href: "/profile", icon: User, label: "Perfil" },
 ];
